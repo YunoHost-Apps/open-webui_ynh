@@ -10,8 +10,7 @@ It shall NOT be edited by hand.
 
 User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
 
-[![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://example.com)
-[![App Demo](https://img.shields.io/badge/App_Demo-blue?style=for-the-badge)](https://demo.example.com)
+[![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://openwebui.com/)
 [![Version: 0.6.15~ynh1](https://img.shields.io/badge/Version-0.6.15~ynh1-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/openwebui/)
 
 <div align="center">
@@ -23,7 +22,7 @@ User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/openwebui)](https://ci-apps.yunohost.org/ci/apps/openwebui/)
 
-🛠️ Upstream Open WebUI repository: <https://some.forge.com/example/example>
+🛠️ Upstream Open WebUI repository: <https://github.com/open-webui/open-webui>
 
 Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/openwebui_ynh/tree/testing).
 
