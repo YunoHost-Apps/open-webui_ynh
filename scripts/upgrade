@@ -13,7 +13,6 @@ source /usr/share/yunohost/helpers
 
 pushd $install_dir
  ynh_exec_as_app $install_dir/pip install -U open-webui
- ynh_exec_as_app open-webui serve
 popd
 
 chown -R "$app:www-data" "$install_dir"
