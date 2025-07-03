@@ -24,9 +24,11 @@ chown -R "$app:www-data" "$install_dir"
 
 pushd $install_dir
  ynh_exec_as_app $install_dir/python3 -m venv venv
- echo "source $install_dir/.venv/bin/activate" >> $install_dir/.bashrc
+ echo "source $install_dir/venv/bin/activate" >> $install_dir/.bashrc
+ source "$install_dir/venv/bin/activate"
  ynh_exec_as_app $install_dir/pip install open-webui
  ynh_exec_as_app open-webui serve
+ deactivate
 popd
 
 chown -R "$app:www-data" "$install_dir"
