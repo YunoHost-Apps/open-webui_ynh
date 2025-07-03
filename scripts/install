@@ -27,7 +27,6 @@ pushd $install_dir
  echo "source $install_dir/venv/bin/activate" >> $install_dir/.bashrc
  source "$install_dir/venv/bin/activate"
  ynh_exec_as_app pip install open-webui
- ynh_exec_as_app open-webui serve
  deactivate
 popd
 
