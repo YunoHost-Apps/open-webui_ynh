@@ -12,6 +12,13 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# STOP SYSTEMD SERVICE
+#=================================================
+ynh_script_progression "Stopping $app's systemd service..."
+
+ynh_systemctl --service="$app" --action="stop"
+
+#=================================================
 # MODIFY URL IN NGINX CONF
 #=================================================
 ynh_script_progression "Updating NGINX web server configuration..."
@@ -29,9 +36,12 @@ ynh_config_add --template=".env" --destination="$install_dir/.env"
 chmod 400 "$install_dir/.env"
 chown "$app:$app" "$install_dir/.env"
 
-pushd
- ynh_exec_as_app open-webui serve
-popd
+#=================================================
+# START SYSTEMD SERVICE
+#=================================================
+ynh_script_progression "Starting $app's systemd service..."
+
+ynh_systemctl --service="$app" --action="start"
 
 #=================================================
 # END OF SCRIPT
