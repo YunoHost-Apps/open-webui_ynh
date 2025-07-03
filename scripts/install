@@ -22,7 +22,7 @@ ynh_setup_source --dest_dir="$install_dir"
 
 chown -R "$app:www-data" "$install_dir"
 
-pushd
+pushd $install_dir
  ynh_exec_as_app $install_dir/python3 -m venv venv
  echo "source $install_dir/.venv/bin/activate" >> $install_dir/.bashrc
  ynh_exec_as_app $install_dir/pip install open-webui
