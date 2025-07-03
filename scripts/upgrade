@@ -12,9 +12,8 @@ source /usr/share/yunohost/helpers
 #=================================================
 
 pushd
- python3 -m venv venv
- pip install -U open-webui
- open-webui serve
+ ynh_exec_as_app $install_dir/pip install -U open-webui
+ ynh_exec_as_app open-webui serve
 popd
 
 chown -R "$app:www-data" "$install_dir"
