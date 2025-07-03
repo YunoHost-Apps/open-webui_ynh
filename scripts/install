@@ -24,6 +24,7 @@ chown -R "$app:www-data" "$install_dir"
 
 pushd
  python3 -m venv venv
+ echo "source $install_dir/.venv/bin/activate" >> $install_dir/.bashrc
  pip install open-webui
  open-webui serve
 popd
