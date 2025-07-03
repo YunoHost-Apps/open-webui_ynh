@@ -49,6 +49,10 @@ ynh_script_progression "Adding system configurations related to $app..."
 
 ynh_config_add_nginx
 
+ynh_config_add_systemd
+
+yunohost service add "$app" --description="User-friendly AI Interface (Supports Ollama, OpenAI API, ...)" --log="/var/log/$app/$app.log"
+
 ynh_config_add_logrotate
 
 #ynh_config_add_fail2ban --logpath="/var/log/nginx/${domain}-error.log" --failregex="Regex to match into the log for a failed login"
