@@ -12,7 +12,7 @@ version = "0.6.13~ynh1"
 maintainers = ["DeMiro5001"]
 
 [upstream]
-license = "BSD 3-Clause"
+license = "BSD-3-Clause"
 website = "https://openwebui.com/"
 admindoc = "https://docs.openwebui.com/getting-started/"
 userdoc = "https://docs.openwebui.com/category/-tutorials"
