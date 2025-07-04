@@ -7,6 +7,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
+EnvironmentFile=__INSTALL_DIR__/.env
 ExecStart=/usr/bin/bash -c 'source __INSTALL_DIR__/venv/bin/activate &&  open-webui serve'
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
