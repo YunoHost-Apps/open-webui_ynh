@@ -1,1 +1,1 @@
-Ceci est un faux disclaimer à présenter avant l'installation
+Cette application requiert beaucoup de ressources 
