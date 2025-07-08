@@ -1,3 +1,1 @@
-Ceci est une fausse doc d'admin pour cette app
-
-Le dossier d'install de l'app est `__INSTALL_DIR__`
+Vous pouvez commencer à utiliser Open WebUI avec Ollama immédiatement (après l'avoir installé depuis le catalogue Yunohost). Voici le guide pour gérer Ollama depuis Open WebUI : https://docs.openwebui.com/getting-started/quick-start/starting-with-ollama/

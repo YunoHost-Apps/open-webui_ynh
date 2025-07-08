@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+Open WebUI est une plateforme d'IA auto-hébergée, extensible, riche en fonctionnalités et conviviale, conçue pour fonctionner entièrement hors ligne. Elle prend en charge divers exécuteurs LLM comme Ollama et les API compatibles OpenAI, avec un moteur d'inférence intégré pour RAG, ce qui en fait une solution de déploiement d'IA puissante.
