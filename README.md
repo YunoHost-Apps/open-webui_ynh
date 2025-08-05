@@ -20,7 +20,7 @@ User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
 
 
 ## Screenshots
-![Screenshot of Open WebUI](./doc/screenshots/example.jpg)
+![Screenshot of Open WebUI](./doc/screenshots/openwebui.jpg)
 
 ## 📦 Developer info
 
