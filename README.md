@@ -4,35 +4,39 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/openwebui.png" width="32px" alt="Logo of Open WebUI">
+  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/open-webui.png" width="32px" alt="Logo of Open WebUI">
   Open WebUI, packaged for YunoHost
 </h1>
 
 User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://openwebui.com/)
-[![Version: 0.6.16~ynh1](https://img.shields.io/badge/Version-0.6.16~ynh1-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/openwebui/)
+[![Version: 0.6.16~ynh1](https://img.shields.io/badge/Version-0.6.16~ynh1-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/open-webui/)
 
 <div align="center">
-<a href="https://apps.yunohost.org/app/openwebui"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
-<a href="https://github.com/YunoHost-Apps/openwebui_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
+<a href="https://apps.yunohost.org/app/open-webui"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
+<a href="https://github.com/YunoHost-Apps/open-webui_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
+
+
+## Screenshots
+![Screenshot of Open WebUI](./doc/screenshots/example.jpg)
 
 ## 📦 Developer info
 
-[![Automatic tests level](https://apps.yunohost.org/badge/cilevel/openwebui)](https://ci-apps.yunohost.org/ci/apps/openwebui/)
+[![Automatic tests level](https://apps.yunohost.org/badge/cilevel/open-webui)](https://ci-apps.yunohost.org/ci/apps/open-webui/)
 
 🛠️ Upstream Open WebUI repository: <https://github.com/open-webui/open-webui>
 
-Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/openwebui_ynh/tree/testing).
+Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/open-webui_ynh/tree/testing).
 
 The `testing` branch can be tested using:
 ```
 # fresh install:
-sudo yunohost app install https://github.com/YunoHost-Apps/openwebui_ynh/tree/testing
+sudo yunohost app install https://github.com/YunoHost-Apps/open-webui_ynh/tree/testing
 
 # upgrade an existing install:
-sudo yunohost app upgrade openwebui -u https://github.com/YunoHost-Apps/openwebui_ynh/tree/testing
+sudo yunohost app upgrade open-webui -u https://github.com/YunoHost-Apps/open-webui_ynh/tree/testing
 ```
 
 ### 📚 App packaging documentation
