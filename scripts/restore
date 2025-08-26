@@ -35,7 +35,7 @@ ynh_restore "/etc/systemd/system/$app.service"
 
 systemctl enable "$app.service" --quiet
 
-ynh_systemctl --service="$app" --action="start" --wait_until="No requirements found in frontmatter"
+ynh_systemctl --service="$app" --action="start" --wait_until="No requirements found in frontmatter" --timeout=600
 
 yunohost service add "$app" --description="User-friendly AI Interface (Supports Ollama, OpenAI API, ...)" --log="/var/log/$app/$app.log"
 
