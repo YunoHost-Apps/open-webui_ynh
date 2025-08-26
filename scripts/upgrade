@@ -44,7 +44,7 @@ ynh_config_add_logrotate
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="start" --wait_until="No requirements found in frontmatter"
+ynh_systemctl --service="$app" --action="start" --wait_until="No requirements found in frontmatter" --timeout=600
 
 #=================================================
 # END OF SCRIPT
