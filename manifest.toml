@@ -7,7 +7,7 @@ name = "Open WebUI"
 description.en = "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
 description.fr = "Interface IA conviviale (Supporte Ollama, API OpenAI, ...)"
 
-version = "0.6.25~ynh1"
+version = "0.6.25~ynh2"
 
 maintainers = ["DeMiro5001"]
 
