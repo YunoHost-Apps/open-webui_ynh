@@ -19,7 +19,9 @@ ynh_systemctl --service="$app" --action="stop"
 #=================================================
 
 pushd $install_dir
- ynh_exec_as_app $install_dir/pip install -U open-webui
+ source "$install_dir/venv/bin/activate"
+ pip install -U open-webui
+ deactivate
 popd
 
 chown -R "$app:www-data" "$install_dir"
