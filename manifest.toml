@@ -7,7 +7,7 @@ name = "Open WebUI"
 description.en = "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
 description.fr = "Interface IA conviviale (Supporte Ollama, API OpenAI, ...)"
 
-version = "0.6.25~ynh2"
+version = "0.6.26~ynh1"
 
 maintainers = ["DeMiro5001"]
 
@@ -55,8 +55,8 @@ ram.runtime = "2G"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/open-webui/open-webui/archive/refs/tags/v0.6.25.tar.gz"
-    sha256 = "38658ed08583e784ccbc1dbd52fbcb1a27ff41d62b1fff59048a30f47de16f0d"
+    url = "https://github.com/open-webui/open-webui/archive/refs/tags/v0.6.26.tar.gz"
+    sha256 = "84ddab75d405b814412d854f1709443906bf51589ba6660e8bb50d89de88faaf"
 
     autoupdate.strategy = "latest_github_tag"
 
