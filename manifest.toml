@@ -55,8 +55,8 @@ ram.runtime = "2G"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/open-webui/open-webui/archive/refs/tags/v0.6.26.tar.gz"
-    sha256 = "84ddab75d405b814412d854f1709443906bf51589ba6660e8bb50d89de88faaf"
+    url = "https://github.com/open-webui/open-webui/archive/refs/tags/v0.8.2.tar.gz"
+    sha256 = "8d0884e87e02b4b8784b084bc57e3f3dd14a68408fc64890395373b8a005af79"
 
     autoupdate.strategy = "latest_github_tag"
 
