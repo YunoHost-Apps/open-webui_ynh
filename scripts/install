@@ -7,6 +7,7 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
+upstream_version=$(ynh_read_manifest "version" | cut -d'~' -f1)
 mail=$(ynh_user_get_info --username=$admin --key=mail)
 
 #=================================================
@@ -22,12 +23,10 @@ ynh_setup_source --dest_dir="$install_dir"
 
 chown -R "$app:www-data" "$install_dir"
 
-pushd $install_dir
+pushd "$install_dir"
  python3 -m venv venv
- echo "source $install_dir/venv/bin/activate" >> $install_dir/.bashrc
- source "$install_dir/venv/bin/activate"
- pip install open-webui
- deactivate
+ venv/bin/pip install --upgrade pip setuptools wheel
+ venv/bin/pip install open-webui=="$upstream_version"
 popd
 
 chown -R "$app:www-data" "$install_dir"
