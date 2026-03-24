@@ -7,6 +7,8 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
+upstream_version=$(ynh_read_manifest "version" | cut -d'~' -f1)
+
 #=================================================
 # STOP SYSTEMD SERVICE
 #=================================================
@@ -18,10 +20,11 @@ ynh_systemctl --service="$app" --action="stop"
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 
-pushd $install_dir
- source "$install_dir/venv/bin/activate"
- pip install -U open-webui
- deactivate
+ynh_setup_source --dest_dir="$install_dir" --keep="venv"
+
+pushd "$install_dir"
+ venv/bin/pip install --upgrade pip setuptools wheel
+ venv/bin/pip install open-webui=="$upstream_version"
 popd
 
 chown -R "$app:www-data" "$install_dir"
