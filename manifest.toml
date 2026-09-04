@@ -50,6 +50,15 @@ ram.runtime = "2G"
     [install.admin]
     type = "user"
 
+    [install.rag_embedding_engine]
+    ask.en = "Embedding engine for RAG (document search)"
+    ask.fr = "Moteur d'embedding pour le RAG (recherche documentaire)"
+    help.en = "Use 'ollama' if Ollama is running locally (avoids downloading a ~1GB model). Use 'openai' for OpenAI-compatible APIs (configure the API key in the admin panel after install). Leave empty to use a built-in local model (slow first start)."
+    help.fr = "Utilisez 'ollama' si Ollama tourne localement (évite le téléchargement d'un modèle de ~1Go). Utilisez 'openai' pour les API compatibles OpenAI (configurez la clé API dans le panneau d'administration après l'installation). Laissez vide pour utiliser un modèle local intégré (premier démarrage lent)."
+    type = "select"
+    choices = ["ollama", "openai", ""]
+    default = "ollama"
+
 [resources]
 
     [resources.sources]
